@@ -125,7 +125,82 @@ export default function ShowSkills(props: SkillPorps) {
         </ul>
       );
     case "O":
-      return;
+      return (
+        <ul className="grid grid-cols-1 grid-rows-2 my-5 mx-5 justify-center">
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="text-xl font-light mb-5">
+              Other
+              <hr className="border-black" />
+            </h3>
+            <div className="grid grid-cols-3">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-black rounded-full animate-[up_1.2s]">
+                <Image
+                  src={"/img/skill/tailwind.png"}
+                  fill
+                  sizes="cover"
+                  alt="TailWindCSS"
+                />
+              </li>
+              <li className="relative w-200 h-20 my-5 mx-5 bg-gray-300 rounded-full animate-[up_1.8s] overflow-hidden">
+                <Image
+                  src={"/img/skill/scss.png"}
+                  fill
+                  sizes="cover"
+                  alt="CSS3"
+                />
+              </li>
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+                <Image
+                  src={"/img/skill/py.png"}
+                  fill
+                  sizes="cover"
+                  alt="Python"
+                />
+              </li>
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+                <Image
+                  src={"/img/skill/bs4.png"}
+                  fill
+                  sizes="cover"
+                  alt="BS4"
+                />
+              </li>
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+                <Image
+                  src={"/img/skill/flask.png"}
+                  fill
+                  sizes="cover"
+                  alt="Flask"
+                />
+              </li>
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+                <Image
+                  src={"/img/skill/java.png"}
+                  fill
+                  sizes="cover"
+                  alt="Java"
+                />
+              </li>
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+                <Image
+                  src={"/img/skill/android.png"}
+                  fill
+                  sizes="cover"
+                  alt="Android"
+                />
+              </li>
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+                <Image
+                  src={"/img/skill/dart.png"}
+                  fill
+                  sizes="cover"
+                  alt="Dart"
+                />
+              </li>
+            </div>
+          </div>
+        </ul>
+      );
     default:
       break;
   }
