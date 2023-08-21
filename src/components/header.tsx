@@ -1,41 +1,52 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const onMenuClick = () => {
-    const menu = document.getElementById("menu");
+
+  let menu: any;
+  if (typeof document !== "undefined") {
+    menu = document.getElementById("menu_content");
+  }
+
+  const closeMenu = () => {
+    if (!menu) return;
+    menu.style.transform = `translateY(0%)`;
+    document.removeEventListener("click", closeMenu);
+    setShowMenu(false);
+  };
+
+  const openMenu = () => {
     if (!menu) return;
     menu.style.transition = "0.6s";
-    switch (showMenu) {
-      case false:
-        menu.style.transform = `translateY(100%)`;
-        return setShowMenu((prev) => !prev);
-      case true:
-        menu.style.transform = `translateY(0%)`;
-        return setShowMenu((prev) => !prev);
-      default:
-        break;
-    }
+    menu.style.transform = `translateY(100%)`;
+    document.addEventListener("click", closeMenu);
   };
+  useEffect(() => {
+    showMenu ? openMenu() : closeMenu();
+  }, [showMenu]);
   return (
-    <header className="w-full h-20 fixed">
+    <header className="w-full h-20 fixed top-0 z-10">
       <div className="h-full flex items-center justify-between relative bg-black px-4 z-10">
         <Link href="/">
           <h1 className="text-white text-4xl font-extralight">
             DY's PortFolio
           </h1>
         </Link>
-        <button onClick={onMenuClick}>
+        <button
+          onClick={() => setShowMenu((prev) => !prev)}
+          className="w-12 text-white"
+        >
           <svg
+            id="menu"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-12 text-white"
+            className="w-full h-full"
           >
             <path
               strokeLinecap="round"
@@ -46,13 +57,13 @@ export default function Header() {
         </button>
       </div>
       <div
-        id="menu"
+        id="menu_content"
         className="w-full h-[10%] fixed left-0 bg-[rgba(0,0,0,0.5)] top-0"
       >
         <nav className="h-full text-white text-2xl z-10">
           <ul className="h-full flex justify-between items-center mx-4">
             <li className="hover:scale-125 duration-200">
-              <Link href="/skils">
+              <Link href="/skills">
                 <h3>Skills</h3>
               </Link>
             </li>
