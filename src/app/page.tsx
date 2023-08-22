@@ -17,10 +17,10 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setTimeout(() => showText(), 2500);
+    setTimeout(() => showText(), 1500);
   }, []);
   return (
-    <main className="w-screen h-screen animate-intro bg-small xl:bg-big bg-cover">
+    <main className="w-screen h-screen animate-[intro_2s] bg-small xl:bg-big bg-cover">
       <div className="w-full h-[90%] flex items-center justify-center">
         <h2 className="text-3xl text-white animate-cursor">{text}</h2>
       </div>

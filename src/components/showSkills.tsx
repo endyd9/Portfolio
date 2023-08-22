@@ -55,7 +55,7 @@ export default function ShowSkills(props: SkillPorps) {
           </div>
         </ul>
       );
-    case "T":
+    case "F":
       return (
         <ul
           key={Math.random()}
@@ -131,7 +131,7 @@ export default function ShowSkills(props: SkillPorps) {
           </div>
         </ul>
       );
-    case "O":
+    case "T":
       return (
         <ul
           key={Math.random()}
@@ -139,7 +139,7 @@ export default function ShowSkills(props: SkillPorps) {
         >
           <div className="flex flex-col items-center justify-center">
             <h3 className="text-xl font-light mb-5">
-              Other
+              Tryed
               <hr className="border-black" />
             </h3>
             <div className="grid grid-cols-3">
