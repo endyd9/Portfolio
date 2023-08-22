@@ -26,14 +26,14 @@ export default function ProjectList(props: ProjectProps) {
   ];
 
   return (
-    <div className="h-[65%] grid grid-cols-1 items-center justify-cente overflow-scroll cursor-pointer">
+    <div className="h-[65%] grid grid-cols-1 items-center justify-cente overflow-scroll">
       {projects.toReversed().map((project) => (
         <div
           key={project.name}
           className="w-auto h-auto flex flex-col items-center"
           onClick={() => props.projectSelector(project.name)}
         >
-          <div className="w-[90%] h-64 bg-gray-100 mx-auto relative">
+          <div className="w-[90%] h-64 bg-gray-100 mx-auto  cursor-pointer relative">
             <Image
               src={project.cover}
               fill
@@ -41,7 +41,7 @@ export default function ProjectList(props: ProjectProps) {
               className="object-contain"
             />
           </div>
-          <span className="my-3">{project.name}</span>
+          <span className="my-3  cursor-pointer">{project.name}</span>
         </div>
       ))}
     </div>
