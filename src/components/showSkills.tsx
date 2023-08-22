@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 
 interface SkillPorps {
@@ -9,7 +10,10 @@ export default function ShowSkills(props: SkillPorps) {
   switch (props.case) {
     case "L":
       return (
-        <ul className="grid grid-cols-2 grid-rows-2 my-5 mx-5 justify-center">
+        <ul
+          key={Math.random()}
+          className="grid grid-cols-2 grid-rows-2 my-5 mx-5 justify-center"
+        >
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-light mb-5">
               MarkUp
@@ -53,13 +57,16 @@ export default function ShowSkills(props: SkillPorps) {
       );
     case "T":
       return (
-        <ul className="grid grid-cols-2 grid-rows-2 my-5 mx-5 justify-center">
+        <ul
+          key={Math.random()}
+          className="grid grid-cols-2 grid-rows-2 my-5 mx-5 justify-center"
+        >
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-light mb-5">
               FrameWorks
               <hr className="border-black" />
             </h3>
-            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_0.8s]">
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_0.5s]">
               <Image
                 src={"/img/skill/react.png"}
                 fill
@@ -67,7 +74,7 @@ export default function ShowSkills(props: SkillPorps) {
                 alt="ReactJS"
               />
             </li>
-            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.4s]">
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1s]">
               <Image
                 src={"/img/skill/next.png"}
                 fill
@@ -75,7 +82,7 @@ export default function ShowSkills(props: SkillPorps) {
                 alt="NextJS"
               />
             </li>
-            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_0.9s]">
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.5s]">
               <Image
                 src={"/img/skill/express.png"}
                 fill
@@ -97,7 +104,7 @@ export default function ShowSkills(props: SkillPorps) {
               DB
               <hr className="border-black" />
             </h3>
-            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_2s]">
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_0.8s]">
               <Image
                 src={"/img/skill/mongo.png"}
                 fill
@@ -105,7 +112,7 @@ export default function ShowSkills(props: SkillPorps) {
                 alt="MongoDB"
               />
             </li>
-            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_2.2s]">
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.2s]">
               <Image
                 src={"/img/skill/mysql.png"}
                 fill
@@ -113,7 +120,7 @@ export default function ShowSkills(props: SkillPorps) {
                 alt="MySql"
               />
             </li>
-            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_2.2s]">
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.8s]">
               <Image
                 src={"/img/skill/postgresql.png"}
                 fill
@@ -126,14 +133,17 @@ export default function ShowSkills(props: SkillPorps) {
       );
     case "O":
       return (
-        <ul className="grid grid-cols-1 grid-rows-2 my-5 mx-5 justify-center">
+        <ul
+          key={Math.random()}
+          className="grid grid-cols-1 grid-rows-2 my-5 mx-5 justify-center"
+        >
           <div className="flex flex-col items-center justify-center">
             <h3 className="text-xl font-light mb-5">
               Other
               <hr className="border-black" />
             </h3>
             <div className="grid grid-cols-3">
-              <li className="relative w-20 h-20 my-5 mx-5 bg-black rounded-full animate-[up_1.2s]">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-black rounded-full animate-[up_0.5s]">
                 <Image
                   src={"/img/skill/tailwind.png"}
                   fill
@@ -141,15 +151,15 @@ export default function ShowSkills(props: SkillPorps) {
                   alt="TailWindCSS"
                 />
               </li>
-              <li className="relative w-200 h-20 my-5 mx-5 bg-gray-300 rounded-full animate-[up_1.8s] overflow-hidden">
+              <li className="relative w-200 h-20 my-5 mx-5 bg-gray-300 rounded-full animate-[up_0.7s] overflow-hidden">
                 <Image
                   src={"/img/skill/scss.png"}
                   fill
                   sizes="cover"
-                  alt="CSS3"
+                  alt="SCSS"
                 />
               </li>
-              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1s]">
                 <Image
                   src={"/img/skill/py.png"}
                   fill
@@ -157,7 +167,7 @@ export default function ShowSkills(props: SkillPorps) {
                   alt="Python"
                 />
               </li>
-              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1.4s]">
                 <Image
                   src={"/img/skill/bs4.png"}
                   fill
@@ -165,7 +175,7 @@ export default function ShowSkills(props: SkillPorps) {
                   alt="BS4"
                 />
               </li>
-              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1.7s]">
                 <Image
                   src={"/img/skill/flask.png"}
                   fill
@@ -173,7 +183,7 @@ export default function ShowSkills(props: SkillPorps) {
                   alt="Flask"
                 />
               </li>
-              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2s]">
                 <Image
                   src={"/img/skill/java.png"}
                   fill
@@ -189,7 +199,7 @@ export default function ShowSkills(props: SkillPorps) {
                   alt="Android"
                 />
               </li>
-              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.2s]">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.4s]">
                 <Image
                   src={"/img/skill/dart.png"}
                   fill
