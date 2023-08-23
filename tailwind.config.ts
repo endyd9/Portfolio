@@ -7,6 +7,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./*.html",
   ],
   theme: {
     extend: {
@@ -62,8 +63,8 @@ const config: Config = {
         down: "down 1.2s",
       },
       backgroundImage: {
-        small: `url('../img/main2.jpg')`,
-        big: `url('../img/main.jpg')`,
+        small: `url('/img/main2.jpg')`,
+        big: `url('/img/main.jpg')`,
       },
     },
   },
