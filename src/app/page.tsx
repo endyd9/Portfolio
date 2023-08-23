@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main
       id="home"
-      className={`w-screen h-screen animate-[intro_2s] bg-[url('/img/main2.jpg')] lg:bg-[url('/img/main.jpg')] bg-cover`}
+      className={`w-screen h-screen animate-[intro_2s] bg-small lg:bg-big bg-cover`}
     >
       <div className="w-full h-[90%] flex items-center justify-center">
         <h2 className="text-3xl text-white animate-cursor">{text}</h2>
