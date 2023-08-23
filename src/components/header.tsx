@@ -28,7 +28,7 @@ export default function Header() {
     showMenu ? openMenu() : closeMenu();
   }, [showMenu]);
   return (
-    <header className="w-full h-20 fixed top-0 z-10">
+    <header className="w-full h-24 fixed left-0 top-0 z-10">
       <div className="h-full flex items-center justify-between relative bg-black px-4 z-10">
         <Link href="/">
           <h1 className="text-white text-4xl font-extralight">
@@ -60,7 +60,7 @@ export default function Header() {
         id="menu_content"
         className="w-full h-[10%] fixed left-0 bg-[rgba(0,0,0,0.5)] top-0"
       >
-        <nav className="h-full text-white text-2xl z-10">
+        <nav className="h-20 text-white text-2xl z-10">
           <ul className="h-full flex justify-between items-center mx-4">
             <li className="hover:scale-125 duration-200">
               <Link href="/skills">

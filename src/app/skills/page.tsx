@@ -16,7 +16,7 @@ export default function Skills() {
       <div className="h-full">
         <h1 className="ml-5 pt-5 pb-3 text-4xl font-bold">Skills</h1>
         <section className="relative">
-          <div
+          {/* <div
             className={
               selector === "L"
                 ? "absolute h-10 w-36 bg-gradient-to-r from-gray-400 to-white rounded-r-3xl -z-10"
@@ -26,14 +26,38 @@ export default function Skills() {
                 ? "absolute left-80 h-10 w-32 bg-gradient-to-l from-gray-400 to-white rounded-l-3xl -z-10"
                 : undefined
             }
-          ></div>
+          ></div> */}
           <nav
             className="mx-5 flex justify-between items-center"
             onClick={onSelectorClick}
           >
-            <button className="text-xl font-mono">Language</button>
-            <button className="text-xl font-mono">FrameWorks&DB</button>
-            <button className="text-xl font-mono">Tryed</button>
+            <button
+              className={
+                selector === "L"
+                  ? "text-xl font-mono bg-gradient-to-r from-white via-gray-300 to-white rounded-l-full rounded-r-full rounded-t-xl rounded-b-xl"
+                  : "text-xl font-mono"
+              }
+            >
+              Language
+            </button>
+            <button
+              className={
+                selector === "F"
+                  ? "text-xl font-mono bg-gradient-to-r from-white via-gray-300 to-white rounded-l-full rounded-r-full rounded-t-xl rounded-b-xl"
+                  : "text-xl font-mono"
+              }
+            >
+              FrameWorks&DB
+            </button>
+            <button
+              className={
+                selector === "T"
+                  ? "text-xl font-mono bg-gradient-to-r from-white via-gray-300 to-white rounded-l-full rounded-r-full rounded-t-xl rounded-b-xl"
+                  : "text-xl font-mono"
+              }
+            >
+              Tryed
+            </button>
           </nav>
           <ShowSkills case={selector} />
         </section>

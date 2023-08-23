@@ -63,7 +63,7 @@ const config: Config = {
       },
       backgroundImage: {
         small: 'url("/img/main2.jpg")',
-        big: 'url("../../public/img/main2.jpg")',
+        big: 'url("/img/main.jpg")',
       },
     },
   },
