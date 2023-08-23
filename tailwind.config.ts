@@ -1,7 +1,11 @@
 // @ts-nocheck
 
-import { prefix } from "@/lib";
 import type { Config } from "tailwindcss";
+
+const prefix =
+  process.env.NODE_ENV === "production"
+    ? "https://endyd9.github.io/Portfolio/"
+    : "";
 
 const config: Config = {
   content: [
@@ -63,8 +67,8 @@ const config: Config = {
         down: "down 1.2s",
       },
       backgroundImage: {
-        small: `url("/img/main2.jpg")`,
-        big: `url("/img/main.jpg")`,
+        small: `url('${prefix}/img/main2.jpg')`,
+        big: `url('${prefix}/img/main.jpg')`,
       },
     },
   },

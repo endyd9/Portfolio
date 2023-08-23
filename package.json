@@ -5,7 +5,7 @@
   "homepage": "https://endyd9.github.io/Portfolio/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "serve": "npx http-server out",
     "start": "next start",
     "lint": "next lint"

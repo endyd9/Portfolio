@@ -2,6 +2,7 @@
 
 import { ReactNode, useEffect, useState } from "react";
 import { ProjectProps } from "./projectList";
+import { prefix } from "@/lib";
 
 interface ProjectDtailProps extends ProjectProps {
   projectName: string;
@@ -339,7 +340,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
             {imgName.map((img) => (
               <img
                 key={img}
-                src={`/img/${img}.png`}
+                src={`${prefix}/img/${img}.png`}
                 alt={img}
                 className={
                   props.imgDirection === "v"
