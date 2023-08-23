@@ -24,7 +24,7 @@ export default function Home() {
     <main
       className={
         prefix
-          ? `w-screen h-screen animate-[intro_2s] bg-samll lg:bg-big bg-cover`
+          ? `w-screen h-screen animate-[intro_2s] bg-[url('Portfolio/img/main2.jpg')] lg:bg-[url('Portfolio/img/main.jpg')] bg-cover`
           : `w-screen h-screen animate-[intro_2s] bg-[url('/img/main2.jpg')] lg:bg-[url('/img/main.jpg')] bg-cover`
       }
     >
