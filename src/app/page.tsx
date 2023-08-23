@@ -22,11 +22,8 @@ export default function Home() {
   }, []);
   return (
     <main
-      className={
-        prefix
-          ? `w-screen h-screen animate-[intro_2s] bg-[url('Portfolio/img/main2.jpg')] lg:bg-[url('Portfolio/img/main.jpg')] bg-cover`
-          : `w-screen h-screen animate-[intro_2s] bg-[url('/img/main2.jpg')] lg:bg-[url('/img/main.jpg')] bg-cover`
-      }
+      id="home"
+      className={`w-screen h-screen animate-[intro_2s] bg-[url('/img/main2.jpg')] lg:bg-[url('/img/main.jpg')] bg-cover`}
     >
       <div className="w-full h-[90%] flex items-center justify-center">
         <h2 className="text-3xl text-white animate-cursor">{text}</h2>
