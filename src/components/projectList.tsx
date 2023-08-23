@@ -27,7 +27,7 @@ export default function ProjectList(props: ProjectProps) {
 
   return (
     <div className="h-[65%] grid grid-cols-1 items-center justify-cente overflow-scroll">
-      {projects.toReversed().map((project) => (
+      {projects.reverse().map((project) => (
         <div
           key={project.name}
           className="w-auto h-auto flex flex-col items-center"
