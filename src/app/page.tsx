@@ -1,5 +1,6 @@
 "use client";
 
+import { prefix } from "@/lib";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -20,7 +21,9 @@ export default function Home() {
     setTimeout(() => showText(), 1500);
   }, []);
   return (
-    <main className="w-screen h-screen animate-[intro_2s] bg-small xl:bg-big bg-cover">
+    <main
+      className={`w-screen h-screen animate-[intro_2s] bg-[url("/img/main2.jpg")] bg-cover`}
+    >
       <div className="w-full h-[90%] flex items-center justify-center">
         <h2 className="text-3xl text-white animate-cursor">{text}</h2>
       </div>

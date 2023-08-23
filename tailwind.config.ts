@@ -1,5 +1,6 @@
 // @ts-nocheck
 
+import { prefix } from "@/lib";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -62,8 +63,8 @@ const config: Config = {
         down: "down 1.2s",
       },
       backgroundImage: {
-        small: 'url("/img/main2.jpg")',
-        big: 'url("/img/main.jpg")',
+        small: `url("/img/main2.jpg")`,
+        big: `url("/img/main.jpg")`,
       },
     },
   },

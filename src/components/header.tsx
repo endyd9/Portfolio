@@ -1,5 +1,6 @@
 "use client";
 
+import { prefix } from "@/lib";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -30,7 +31,7 @@ export default function Header() {
   return (
     <header className="w-full h-24 fixed left-0 top-0 z-10">
       <div className="h-full flex items-center justify-between relative bg-black px-4 z-10">
-        <Link href="/">
+        <Link href={`${prefix}/`}>
           <h1 className="text-white text-4xl font-extralight">
             DY's PortFolio
           </h1>
@@ -63,22 +64,22 @@ export default function Header() {
         <nav className="h-20 text-white text-2xl z-10">
           <ul className="h-full flex justify-between items-center mx-4">
             <li className="hover:scale-125 duration-200">
-              <Link href="/skills">
+              <Link href={`${prefix}/skills`}>
                 <h3>Skills</h3>
               </Link>
             </li>
             <li className="hover:scale-125 duration-200">
-              <Link href="/projects">
+              <Link href={`${prefix}/projects`}>
                 <h3>Projects</h3>{" "}
               </Link>
             </li>
             <li className="hover:scale-125 duration-200">
-              <Link href="/about">
+              <Link href={`${prefix}/about`}>
                 <h3>About Me</h3>
               </Link>
             </li>
             <li className="hover:scale-125 duration-200">
-              <Link href="/contect">
+              <Link href={`${prefix}/contect`}>
                 <h3>Contect</h3>
               </Link>
             </li>

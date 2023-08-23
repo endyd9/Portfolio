@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-const debug = process.env.NODE_ENV !== "production";
-const repository = "joonyoung-s-portfolio-page";
+const prod = process.env.NODE_ENV === "production";
+const repository = "Portfolio";
 
 const nextConfig = {
   output: "export",
-  reactStrictMode: true,
-  assetPrefix: !debug ? `/${repository}/` : "",
+  assetPrefix: prod ? `/${repository}/` : "",
   trailingSlash: true,
 };
 

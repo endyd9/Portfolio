@@ -1,3 +1,4 @@
+import { prefix } from "@/lib";
 import Image from "next/image";
 
 interface ProjectCover {
@@ -13,15 +14,15 @@ export default function ProjectList(props: ProjectProps) {
   const projects: ProjectCover[] = [
     {
       name: "Drawing Game",
-      cover: "/img/drawing/2.png",
+      cover: `${prefix}/img/drawing/2.png`,
     },
     {
       name: "Oi-Market",
-      cover: "/img/oi/로그인 안한 메인.png",
+      cover: `${prefix}/img/oi/로그인 안한 메인.png`,
     },
     {
       name: "BooJaDongSan",
-      cover: "/img/booja/메인.png",
+      cover: `${prefix}/img/booja/메인.png`,
     },
   ];
 

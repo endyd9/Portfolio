@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "hhttps://github.com/endyd9/Portfolio",
+  "homepage": "https://endyd9.github.io/Portfolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
