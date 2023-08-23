@@ -20,8 +20,8 @@ export default function Header() {
 
   const openMenu = () => {
     if (!menu) return;
-    menu.style.transition = "0.6s";
-    menu.style.transform = `translateY(100%)`;
+    menu.style.transition = "0.4s";
+    menu.style.transform = `translateY(105%)`;
     document.addEventListener("click", closeMenu);
   };
   useEffect(() => {

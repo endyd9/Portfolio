@@ -225,7 +225,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
             <p className="text-xl my-2">- FrontEnd & BackEnd</p>
             TypeScript, Next.JS 13, TaillWindCSS <br />
             <p className="text-xl my-2">- DB</p>
-            <p>로컬 PostgreSQL 15(로컬환경), Vercel Postres (배포환경)</p>
+            <p>PostgreSQL 15(로컬환경), Vercel Postres (배포환경)</p>
           </>
         ),
         codeDeploy: (
