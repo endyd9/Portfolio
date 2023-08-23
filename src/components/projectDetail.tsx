@@ -334,7 +334,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
       </nav>
       {menu === true ? (
         // 사진
-        <div className="w-full flex flex-col items-center justify-center animate-[intro_.3s]">
+        <div className="w-full flex flex-col items-center justify-center animate-[intro_.3s] relative">
           <div className="w-96 h-64 my-10 bg-gray-100 relative flex overflow-hidden">
             {imgName.map((img) => (
               <img
@@ -350,7 +350,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
             ))}
           </div>
           {/* 사진 앞 뒤 버튼 */}
-          <div className="absolute w-[90%] flex justify-between mx-5">
+          <div className="absolute w-full flex justify-between mx-5">
             <button
               className="text-3xl w-10 h-10 bg-gray-100 rounded-full"
               onClick={privPage}

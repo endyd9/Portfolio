@@ -30,18 +30,17 @@ export default function ProjectList(props: ProjectProps) {
       {projects.reverse().map((project) => (
         <div
           key={project.name}
-          className="w-auto h-auto flex flex-col items-center"
+          className="w-auto h-auto flex flex-col items-center mb-10"
           onClick={() => props.projectSelector(project.name)}
         >
-          <div className="w-[90%] h-64 bg-gray-100 mx-auto  cursor-pointer relative">
-            <Image
+          <div className="w-[90%] h-64 bg-gray-100  cursor-pointer relative">
+            <img
               src={project.cover}
-              fill
               alt={project.name}
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
-          <span className="my-3  cursor-pointer">{project.name}</span>
+          <span className="my-3 cursor-pointer">{project.name}</span>
         </div>
       ))}
     </div>

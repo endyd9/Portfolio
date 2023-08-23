@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 interface SkillPorps {
   case: string;
 }
@@ -20,15 +18,25 @@ export default function ShowSkills(props: SkillPorps) {
               <hr className="border-black" />
             </h3>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_.3s]">
-              <Image
+              <img
                 src={"/img/skill/html.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="HTML5"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1s]">
-              <Image src={"/img/skill/css.png"} fill sizes="cover" alt="CSS3" />
+              <img
+                src={"/img/skill/css.png"}
+                className="object-cover w-full h-full"
+                alt="CSS3"
+              />
+            </li>
+            <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.2s]">
+              <img
+                src={"/img/skill/tailwind.png"}
+                className="object-cover w-full h-full"
+                alt="TailWindCSS"
+              />
             </li>
           </div>
           <div className="flex flex-col items-center">
@@ -37,18 +45,16 @@ export default function ShowSkills(props: SkillPorps) {
               <hr className="border-black" />
             </h3>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_.6s]">
-              <Image
+              <img
                 src={"/img/skill/js.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="JavaScript"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.2s]">
-              <Image
+              <img
                 src={"/img/skill/ts.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="TypeScript"
               />
             </li>
@@ -67,34 +73,30 @@ export default function ShowSkills(props: SkillPorps) {
               <hr className="border-black" />
             </h3>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_0.2s]">
-              <Image
+              <img
                 src={"/img/skill/react.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="ReactJS"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_.8s]">
-              <Image
+              <img
                 src={"/img/skill/next.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="NextJS"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.3s]">
-              <Image
+              <img
                 src={"/img/skill/express.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="ExpressJS"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.8s] overflow-hidden">
-              <Image
+              <img
                 src={"/img/skill/nestjs.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="NestJS"
               />
             </li>
@@ -105,26 +107,23 @@ export default function ShowSkills(props: SkillPorps) {
               <hr className="border-black" />
             </h3>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_0.5s]">
-              <Image
+              <img
                 src={"/img/skill/mongo.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="MongoDB"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1s]">
-              <Image
+              <img
                 src={"/img/skill/mysql.png"}
-                fill
-                sizes="cover"
+                className="object-cover w-full h-full"
                 alt="MySql"
               />
             </li>
             <li className="relative w-20 h-20 my-3 bg-gray-200 rounded-full animate-[up_1.5s]">
-              <Image
+              <img
                 src={"/img/skill/postgresql.png"}
-                fill
-                sizes="cover"
+                className="object-fill w-full h-full"
                 alt="PostgreSQL"
               />
             </li>
@@ -143,76 +142,60 @@ export default function ShowSkills(props: SkillPorps) {
               <hr className="border-black" />
             </h3>
             <div className="grid grid-cols-3">
-              <li className="relative w-20 h-20 my-5 mx-5 bg-black rounded-full animate-[up_0.2s]">
-                <Image
-                  src={"/img/skill/tailwind.png"}
-                  fill
-                  sizes="cover"
-                  alt="TailWindCSS"
+              <li className="relative w-20 h-20 my-5 mx-5 bg-black rounded-full animate-[up_0.2s] overflow-hidden">
+                <img
+                  src={"/img/skill/rn.png"}
+                  className="object-fill w-full h-full"
+                  alt="ReactNative"
                 />
               </li>
               <li className="relative w-200 h-20 my-5 mx-5 bg-gray-300 rounded-full animate-[up_0.4s] overflow-hidden">
-                <Image
+                <img
                   src={"/img/skill/scss.png"}
-                  fill
-                  sizes="cover"
+                  className="object-cover w-full h-full"
                   alt="SCSS"
                 />
               </li>
               <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_.8s]">
-                <Image
+                <img
                   src={"/img/skill/py.png"}
-                  fill
-                  sizes="cover"
+                  className="object-contain w-full h-full"
                   alt="Python"
                 />
               </li>
               <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1s]">
-                <Image
+                <img
                   src={"/img/skill/bs4.png"}
-                  fill
-                  sizes="cover"
+                  className="object-fill w-full h-full"
                   alt="BS4"
                 />
               </li>
               <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1.3s]">
-                <Image
+                <img
                   src={"/img/skill/flask.png"}
-                  fill
-                  sizes="cover"
+                  className="object-contain w-full h-full"
                   alt="Flask"
                 />
               </li>
               <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1.7s]">
-                <Image
+                <img
                   src={"/img/skill/java.png"}
-                  fill
-                  sizes="cover"
+                  className="object-contain w-full h-full"
                   alt="Java"
                 />
               </li>
               <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_1.9s]">
-                <Image
+                <img
                   src={"/img/skill/android.png"}
-                  fill
-                  sizes="cover"
+                  className="object-fill w-full h-full"
                   alt="Android"
                 />
               </li>
               <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.1s]">
-                <Image
+                <img
                   src={"/img/skill/dart.png"}
-                  fill
-                  sizes="cover"
+                  className="object-fill w-full h-full"
                   alt="Dart"
-                />
-              </li>
-              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-200 rounded-full animate-[up_2.4s] overflow-hidden">
-                <Image
-                  src={"/img/skill/rn.png"}
-                  fill
-                  sizes="cover"
-                  alt="ReactNative"
                 />
               </li>
             </div>
