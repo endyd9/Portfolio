@@ -151,7 +151,7 @@ export default function ShowSkills(props: SkillPorps) {
                   alt="ReactNative"
                 />
               </li>
-              <li className="relative w-200 h-20 my-5 mx-5 bg-gray-300 rounded-full animate-[up_0.4s] overflow-hidden">
+              <li className="relative w-20 h-20 my-5 mx-5 bg-gray-300 rounded-full animate-[up_0.4s] overflow-hidden">
                 <img
                   src={`${prefix}/img/skill/scss.png`}
                   className="object-cover w-full h-full"

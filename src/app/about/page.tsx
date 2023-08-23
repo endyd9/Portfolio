@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <main className="mt-[20%] w-full h-screen animate-[intro_1s]">
+    <main className="mt-[20%] lg:mt-[8%] w-full h-screen animate-[intro_1s]">
       <div className="h-full">
         <h1 className="ml-5 pt-5 mb-5 text-4xl font-bold">About Me</h1>
         <div className="w-[90%] h-[60%] mx-auto flex flex-col overflow-y-scroll">

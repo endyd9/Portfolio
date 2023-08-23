@@ -12,7 +12,7 @@ export default function Skills() {
   };
 
   return (
-    <main className="mt-[18%] h-screen animate-[intro_1s]">
+    <main className="mt-[20%] lg:mt-[6%] h-screen animate-[intro_1s]">
       <div className="h-full">
         <h1 className="ml-5 pt-8 pb-3 text-4xl font-bold">Skills</h1>
         <section className="relative">

@@ -1,6 +1,6 @@
 export default function Contect() {
   return (
-    <main className="mt-[20%] w-full h-screen animate-[intro_1s]">
+    <main className="mt-[20%] lg:mt-[8%] w-full h-screen animate-[intro_1s]">
       <div className="h-full">
         <h1 className="ml-5 pt-5 pb-10 text-4xl font-bold">Contect</h1>
         <div className="w-full h-[50%] flex items-center justify-center">
