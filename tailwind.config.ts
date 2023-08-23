@@ -62,8 +62,8 @@ const config: Config = {
         down: "down 1.2s",
       },
       backgroundImage: {
-        small: `url('Portfolio/img/main2.jpg')`,
-        big: `url('Portfoolio/img/main.jpg')`,
+        // small: `url('Portfolio/img/main2.jpg')`,
+        // big: `url('Portfoolio/img/main.jpg')`,
       },
     },
   },
