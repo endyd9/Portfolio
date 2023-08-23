@@ -63,8 +63,8 @@ const config: Config = {
         down: "down 1.2s",
       },
       backgroundImage: {
-        small: `url('/img/main2.jpg')`,
-        big: `url('/img/main.jpg')`,
+        small: "url('https://endyd9.github.io/Portfolio/img/main2.jpg')",
+        big: `url('https://endyd9.github.io/Portfolio/img/main.jpg')`,
       },
     },
   },
