@@ -368,7 +368,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
         </div>
       ) : (
         // 설명
-        <div className="h-[60vh] animate-[up_.7s] flex justify-center overflow-y-scroll">
+        <div className="h-[50vh] animate-[up_.7s] flex justify-center overflow-y-scroll">
           <ul className="w-[90%] list-disc my-5">
             <li className="my-3">
               <h3 className="text-2xl mb-3">프로젝트 개요</h3>
