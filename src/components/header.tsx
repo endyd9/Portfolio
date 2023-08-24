@@ -21,24 +21,25 @@ export default function Header() {
 
   const openMenu = () => {
     if (!menu) return;
-    menu.style.transition = "0.4s";
-    menu.style.transform = `translateY(105%)`;
+    menu.style.transition = "0.3s";
+    menu.style.transform = `translateY(100%)`;
     document.addEventListener("click", closeMenu);
   };
   useEffect(() => {
     showMenu ? openMenu() : closeMenu();
   }, [showMenu]);
   return (
-    <header className="w-full h-24 fixed left-0 top-0 z-10">
+    <header className="w-full h-[10%] fixed left-0 top-0 z-10">
       <div className="h-full flex items-center justify-between relative bg-black px-4 z-10">
         <Link href={`${prefix}/`}>
           <h1 className="text-white text-4xl font-extralight">
             DY's PortFolio
           </h1>
         </Link>
+        {/* 메뉴버튼 */}
         <button
           onClick={() => setShowMenu((prev) => !prev)}
-          className="w-12 text-white"
+          className="w-12 text-white xl:invisible"
         >
           <svg
             id="menu"

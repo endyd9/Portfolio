@@ -14,8 +14,10 @@ export default function Skills() {
   return (
     <main className="mt-[20%] lg:mt-[6%] h-screen animate-[intro_1s]">
       <div className="h-full">
-        <h1 className="ml-5 pt-8 pb-3 text-4xl font-bold">Skills</h1>
-        <section className="relative">
+        <h1 className="lg:ml-10 lg:pt-10 2xl:ml-96 ml-5 pt-8 pb-3 text-4xl font-bold">
+          Skills
+        </h1>
+        <section className="relative xl:max-w-2xl xl:mx-auto">
           {/* <div
             className={
               selector === "L"

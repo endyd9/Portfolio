@@ -261,6 +261,8 @@ export default function ProjectDetail(props: ProjectDtailProps) {
   const nextPage = () => {
     if (pageNum + 1 > imgName.length - 1) return alert("마지막 페이지");
     const contanier = document.querySelector(".contanier");
+    console.log(contanier?.clientWidth);
+
     setPosition((priv) => priv + contanier!.clientWidth);
     setPageNum((priv) => priv + 1);
   };
@@ -279,7 +281,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
       c.style.transition = ".5s";
       props.imgDirection === "v"
         ? //@ts-ignore
-          (c.style.transform = `translateX(-${24.3 * pageNum}rem)`)
+          (c.style.transform = `translateX(-${position / 16}rem)`)
         : //@ts-ignore
           (c.style.transform = `translateX(-${position}px)`);
     });
@@ -289,7 +291,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
     <div className="w-[90%] animate-[intro_.5s] mx-auto flex flex-col items-center">
       {/* 뒤로 버튼 */}
       <button
-        className="absolute w-8 h-8 right-6 top-28"
+        className="absolute w-8 h-8 right-6 top-28 xl:w-10 xl:h-10 xl:top-32 2xl:top-36 xl:right-10 2xl:right-72"
         onClick={() => props.projectSelector("Projects")}
       >
         <svg
@@ -307,7 +309,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
         </svg>
       </button>
       {/* 셀렉터 */}
-      <nav className="w-[50%] flex justify-between mb-5">
+      <nav className="w-[50%] lg:max-w-xs flex justify-between mb-5">
         <button
           className={
             menu === true
@@ -336,7 +338,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
       {menu === true ? (
         // 사진
         <div className="w-full flex flex-col items-center justify-center animate-[intro_.3s] relative">
-          <div className="w-96 h-64 my-10 bg-gray-100 relative flex overflow-hidden">
+          <div className="w-96 h-64 lg:w-[800px] lg:h-[500px] my-10 bg-gray-100 flex overflow-hidden">
             {imgName.map((img) => (
               <img
                 key={img}
@@ -344,14 +346,14 @@ export default function ProjectDetail(props: ProjectDtailProps) {
                 alt={img}
                 className={
                   props.imgDirection === "v"
-                    ? "contanier mx-[7.6rem] "
+                    ? "contanier px-[7.6rem] lg:px-[16rem] "
                     : "contanier"
                 }
               />
             ))}
           </div>
           {/* 사진 앞 뒤 버튼 */}
-          <div className="absolute w-full flex justify-between mx-5">
+          <div className="absolute w-full lg:w-[75%] 2xl:w-[60%] flex justify-between mx-5">
             <button
               className="text-3xl w-10 h-10 bg-gray-100 rounded-full"
               onClick={privPage}
@@ -369,7 +371,7 @@ export default function ProjectDetail(props: ProjectDtailProps) {
         </div>
       ) : (
         // 설명
-        <div className="h-[50vh] animate-[up_.7s] flex justify-center overflow-y-scroll">
+        <div className="max-w-xl h-[50vh] animate-[up_.7s] flex justify-center overflow-y-scroll">
           <ul className="w-[90%] list-disc my-5">
             <li className="my-3">
               <h3 className="text-2xl mb-3">프로젝트 개요</h3>

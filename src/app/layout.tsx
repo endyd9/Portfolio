@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="w-full h-full min-h-screen max-w-xl lg:max-w-screen-2xl mx-auto overflow-hidden">
+      <body className="w-screen h-screen min-h-screen max-w-xl lg:max-w-none mx-auto overflow-hidden">
         <Header />
         {children}
       </body>

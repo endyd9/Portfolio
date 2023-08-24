@@ -27,18 +27,18 @@ export default function ProjectList(props: ProjectProps) {
   ];
 
   return (
-    <div className="h-[65%] grid grid-cols-1 items-center justify-cente overflow-scroll">
+    <div className="h-[65%] lg:h-[75%] grid grid-cols-1 items-center lg:items-start  overflow-scroll lg:grid-cols-2 2xl:grid-cols-3">
       {projects.reverse().map((project) => (
         <div
           key={project.name}
-          className="w-auto h-auto flex flex-col items-center mb-10"
+          className="w-auto h-auto flex flex-col items-center my-10"
           onClick={() => props.projectSelector(project.name)}
         >
-          <div className="w-[90%] h-64 bg-gray-100  cursor-pointer relative">
+          <div className="w-[90%] lg:w-[70%] h-64 bg-gray-100  cursor-pointer relative">
             <img
               src={project.cover}
               alt={project.name}
-              className="object-contain w-full h-full"
+              className="object-contain w-full h-full lg:hover:scale-110 transition"
             />
           </div>
           <span className="my-3 cursor-pointer">{project.name}</span>
